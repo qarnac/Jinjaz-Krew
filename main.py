@@ -12,26 +12,26 @@ class FoodType(webapp2.RequestHandler):
     def get(self):  # for a get request
         logging.info('GetFoodType')
 
-        mypage = env.get_template('templates/food.html')
+        mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
     def post(self):
         logging.info('PostFoodType')
-        mypage = env.get_template('templates/food.html')
+        mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
 
 class FoodInfo(webapp2.RequestHandler):
     def get(self):
         logging.info('GetFoodInfo')
-        mypage = env.get_template('templates/foodtype.html')
+        mypage = env.get_template('templates/randomfood.html')
         self.response.write(mypage.render())
 
     def post(self):
         logging.info('PostFoodInfo')
-        mypage = env.get_template('templates/foodtype.html')
+        mypage = env.get_template('templates/randomfood.html')
         self.response.write(mypage.render())
 
 app = webapp2.WSGIApplication([
     ('/', FoodType),
-    ('/', FoodInfo)
+    ('/Random',FoodInfo )
     #('/', )
 ], debug=True)
