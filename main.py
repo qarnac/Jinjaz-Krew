@@ -32,6 +32,6 @@ class FoodInfo(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', FoodType),
-    ('/Random',FoodInfo )
+    ('/random',FoodInfo )
     #('/', )
 ], debug=True)
