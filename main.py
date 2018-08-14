@@ -11,7 +11,6 @@ env = jinja2.Environment(
 class FoodType(webapp2.RequestHandler):
     def get(self):  # for a get request
         logging.info('GetFoodType')
-
         mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
     def post(self):
