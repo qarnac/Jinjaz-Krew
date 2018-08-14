@@ -52,7 +52,12 @@ p {
   font-size: 25px;
 }
 
-
 #input{
  text-align: center;
+ height:25px;
+ font-size:14pt;
+}
+
+#enter {
+  height: 25px;
 }
