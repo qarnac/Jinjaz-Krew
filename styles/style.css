@@ -8,8 +8,11 @@
   grid-template-rows: 1fr 1fr;
 }
 #crave{
-  display: flex;
-  align-content: center;
+  height:250;
+  width: 400;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 p {
   display: flex;
