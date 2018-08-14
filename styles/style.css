@@ -12,8 +12,8 @@ body{
 }
 
 #crave{
-  height:250;
-  width: 400;
+  height:150px;
+  width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -23,6 +23,13 @@ body{
 p {
   display: flex;
   justify-content: center;
+  font-size: 25px;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 40px
 }
 
 #intro {
@@ -39,7 +46,6 @@ p {
   font-size: 25px;
 }
 
-
 #Veggies {
   grid-column: 2;
   grid-row: 2;
@@ -51,9 +57,15 @@ p {
   grid-row: 2;
   font-size: 25px;
 }
+.txt{
+  text-align: center;
 
-
+}
 #input{
- text-align: center;
- 
+ height:25px;
+ font-size:14pt;
+}
+
+#enter {
+  height: 25px;
 }
