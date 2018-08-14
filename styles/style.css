@@ -40,3 +40,7 @@ p {
   grid-column: 3;
   grid-row: 2
 }
+
+#input{
+ text-align: center; 
+}
