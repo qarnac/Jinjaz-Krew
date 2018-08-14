@@ -1,3 +1,6 @@
+body{
+  background-color: #444C5C
+}
 #header {
   text-align: center;
   font-size: 50px;
@@ -16,6 +19,7 @@
 #container2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
 }
 
 #container2 > h2 {
