@@ -51,17 +51,15 @@ p {
   grid-row: 2;
   font-size: 25px;
 }
+.txt{
+  text-align: center;
 
+}
 #input{
- text-align: center;
-<<<<<<< HEAD
  height:25px;
  font-size:14pt;
 }
 
 #enter {
   height: 25px;
-=======
- 
->>>>>>> fd0e0668ed311ff0319290dcc7b713d17919a39b
 }
