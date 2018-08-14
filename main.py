@@ -8,30 +8,22 @@ env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class FoodType(webapp2.RequestHandler):
-    def get(self):  # for a get request
-        logging.info('GetFoodType')
-        mypage = env.get_template('templates/homepage.html')
-        self.response.write(mypage.render())
-    def post(self):
-        
-        logging.info('PostFoodType')
-        mypage = env.get_template('templates/homepage.html')
-        self.response.write(mypage.render())
-
-class FoodInfo(webapp2.RequestHandler):
+class MainPage(webapp2.RequestHandler):
     def get(self):
-        logging.info('GetFoodInfo')
-        mypage = env.get_template('templates/randomfood.html')
+        mypage = env.get_template('templates/homepage.html')
+        self.response.write(mypage.render())
+    def post(self):
+        mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
 
-    def post(self):
-        logging.info('PostFoodInfo')
+class RandomFood(webapp2.RequestHandler):
+    def get(self):  # for a get request
         mypage = env.get_template('templates/randomfood.html')
+        self.response.write(mypage.render())
+    def post(self):
+        mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
 
 app = webapp2.WSGIApplication([
-    ('/', FoodType),
-    ('/random',FoodInfo )
-    #('/', )
+    ('/', MainPage)
 ], debug=True)
