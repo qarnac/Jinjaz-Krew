@@ -16,28 +16,35 @@ p {
 
 #input {
   text-align: center;
+
 }
 
 #mexican{
   background-color: green;
+  padding: 40px;
 }
 
 #chinese{
   background-color: red;
+  padding: 40px;
 }
 
 #thai{
   background-color: yellow;
+  padding: 40px;
 }
 
 #italian{
   background-color: green;
+  padding: 40px;
 }
 
 #american{
   background-color: red;
+  padding: 40px;
 }
 
 #japanese{
   background-color: yellow;
+  padding: 40px;
 }
