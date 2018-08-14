@@ -4,7 +4,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
 }
@@ -13,7 +13,13 @@ p {
   display: flex;
   justify-content: center;
 }
-#
+
+#intro {
+  grid-column: 1 /span 3;
+  grid-row: 1;
+}
+
+
 #Meats {
   grid-column:1 ;
   grid-row: 2;
@@ -22,5 +28,10 @@ p {
 
 #Veggies {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
+}
+
+#health {
+  grid-column: 3;
+  grid-row: 2
 }
