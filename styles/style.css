@@ -7,6 +7,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
 #crave{
   display: flex;
   align-content: center;
@@ -19,11 +20,11 @@ p {
 #intro {
   grid-column: 1 /span 3;
   grid-row: 1;
+  white-space: nowrap;
 }
 
-
 #Meats {
-  grid-column:1 ;
+  grid-column: 1;
   grid-row: 2;
 }
 
@@ -35,5 +36,5 @@ p {
 
 #health {
   grid-column: 3;
-  grid-row: 2
+  grid-row: 2;
 }
