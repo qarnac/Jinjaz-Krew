@@ -1,7 +1,9 @@
 #header {
   text-align: center;
 }
-
+body{
+  background-color: #f2c202;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
