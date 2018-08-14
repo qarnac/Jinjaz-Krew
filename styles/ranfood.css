@@ -18,3 +18,27 @@
 #container2 > h2 {
   text-align: center;
 }
+
+#home{
+  background-color: #CE5A57
+}
+
+#recipe{
+  background-color: #78A5A3
+}
+
+#aboutus{
+  background-color: #E1B16A;
+}
+
+#restrictions{
+  background-color: #E1B16A;
+}
+
+#foodname{
+  background-color: #78A5A3;
+}
+
+#picture{
+  background-color: #CE5A57;
+}
