@@ -5,6 +5,7 @@ body{
   background-color: #f2c202;
 }
 .grid-container {
+  margin-left: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -25,12 +26,14 @@ p {
 }
 
 #intro {
+  margin-left: 60px;
   grid-column: 1 /span 3;
   grid-row: 1;
   white-space: nowrap;
 }
 
 #meat {
+  margin-left: 60px;
   grid-column: 1 / 2;
   grid-row: 2/ 3;
   font-size: 25px;
@@ -48,9 +51,7 @@ p {
   grid-row: 2;
   font-size: 25px;
 }
-.mymeat{
-  font-size: 30px;
-}
+
 
 #input{
  text-align: center;
