@@ -14,12 +14,7 @@ class FoodType(webapp2.RequestHandler):
         mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
     def post(self):
-        recipe_type = self.request.get('recipe_type')
-        ingredient = self.reqiest.get('ingredient')
-        url = 'https://api.edamam.com/search?app_id=28c73d69&app_key=b4dc98f7d320f1968ef7b63205e2e462&q=chicken'
-
-
-
+        
         logging.info('PostFoodType')
         mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
