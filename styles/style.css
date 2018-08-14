@@ -1,12 +1,15 @@
 #header {
   text-align: center;
 }
-
+body{
+  background-color: #f2c202;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
 #crave{
   height:250;
   width: 400;
@@ -22,11 +25,11 @@ p {
 #intro {
   grid-column: 1 /span 3;
   grid-row: 1;
+  white-space: nowrap;
 }
 
-
 #Meats {
-  grid-column:1 ;
+  grid-column: 1;
   grid-row: 2;
 }
 
@@ -38,5 +41,9 @@ p {
 
 #health {
   grid-column: 3;
-  grid-row: 2
+  grid-row: 2;
+}
+
+#input{
+ text-align: center;
 }
