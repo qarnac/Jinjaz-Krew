@@ -8,13 +8,61 @@
   <body>
     <div><!--header-->
       <h1 id="header">Cravings</h1>
+      <img src = "../logo.jpg">
     </div>
-    <img src = "../logo.jpg">
+
     <form id="input"action="index.html" method="post">
       <input type="text" name="location" value="">
       <input type="submit" name="" value="enter">
     </form>
-    <div class="container">
+
+    <!--change intro later -->
+    <h1 id="intro">Choose what you don't want:</h1>
+
+    <div class="grid-container">
+      <div id="meat">
+        <h2>Meats:</h2>
+          <input type="radio" id="beef" name="meats"/>
+          <label for="beef">Beef</label> <br>
+          <input type="radio" id="pork" name="meats"/>
+          <label for="beef">Pork</label> <br>
+          <input type="radio" id="bacon" name="meats"/>
+          <label for="beef">Bacon</label> <br>
+          <input type="radio" id="chicken" name="meats"/>
+          <label for="beef">Chicken</label> <br>
+          <input type="radio" id="salmon" name="meats"/>
+          <label for="beef">Salmon</label> <br>
+      </div>
+      <div id="Veggies">
+        <h2>Vegetables:</h2>
+        <input type="radio" id="onions" name="veggies"/>
+        <label for="onions">Onions</label> <br>
+        <input type="radio" id="broccoli" name="veggies"/>
+        <label for="broccoli">Brocolli</label> <br>
+        <input type="radio" id="tomato" name="veggies"/>
+        <label for="tomato">Tomato</label> <br>
+        <input type="radio" id="olives" name="veggies"/>
+        <label for="olives">Olives</label> <br>
+        <input type="radio" id="lettuce" name="veggies"/>
+        <label for="lettuce">Lettuce</label> <br>
+      </div>
+      <div id="health">
+          <h2>Dietary Restriction:</h2>
+          <input type="radio" id="Vegetarian" name="health"/>
+          <label for="diet">Vegetarian</label> <br>
+          <input type="radio" id="sugar-conscious" name="health"/>
+          <label for="diet">Sugar-Conscious</label> <br>
+          <input type="radio" id="vegan" name="health"/>
+          <label for="diet">Vegan</label> <br>
+          <input type="radio" id="peanut-free" name="health"/>
+          <label for="diet">Peanut-Free</label> <br>
+          <input type="radio" id="tree-nut-free" name="health"/>
+          <label for="diet">Tree-Nut-Free</label> <br>
+          <input type="radio" id="alcohol" name="health"/>
+          <label for="diet">Alcohol</label> <br>
+      </div>
     </div>
+
+
   </body>
 </html>
