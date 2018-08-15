@@ -23,6 +23,7 @@ body{
 p {
   display: flex;
   justify-content: center;
+  font-size: 25px;
 }
 
 #intro {
@@ -55,5 +56,4 @@ p {
 
 #input{
  text-align: center;
- 
 }
