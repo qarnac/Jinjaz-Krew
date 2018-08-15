@@ -13,7 +13,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin-top: 100px
+  margin-top: 200px;
 }
 
 #choose {
@@ -42,6 +42,7 @@ h3 {
   grid-column: 1 /span 3;
   grid-row: 1;
   white-space: nowrap;
+  margin-top: 150px
 }
 
 #meat {
@@ -73,8 +74,4 @@ h3 {
 
 #enter {
   height: 25px;
-}
-
-.intro{
-  margin-top: 225px;
 }
