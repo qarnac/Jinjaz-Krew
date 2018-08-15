@@ -84,8 +84,7 @@ h3 {
 
 .button {
   width: 20em;  height: 2em;
-  position: fixed; 
+  position: fixed;
   right: 10px;
   down: 5px;
-  text-align: center;
 }
