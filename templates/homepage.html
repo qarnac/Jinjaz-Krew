@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Crave</title>
-    <link rel="stylesheet" href="../styles/style.css">
-  </head>
-  <body>
-    <div><!--header-->
-        <img id="crave" src = "../images/crave_pt2.jpg">
-        <br>
-    </div>
-    <form id="input"action="index.html" method="post">
-      <input type="text" name="typeOfFood" value="">
-      <input type="submit" name="" value="enter">
+<head>
+  <meta charset="utf-8">
+  <title>Crave</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
 
-    <form class= "txt" action="index.html" method="post">
-      <input id="input" type="text" name="location" value="" size="35">
-      <input id= "enter" type="submit" name="" value="enter">
-    </form>
-    <form class="sumbit" action="index.html" method="post">
-      <input id="button" type="sumbit" value="submit">
-    </form>
+  <div><!--header-->
+      <img id="crave" src = "../images/crave_pt2.jpg">
+      <br>
+  </div>
 
+  <form action = "/" method = "post">
     <div class="grid-container">
-      <div class="intro">
-        <h1>About Crave</h1>
-        <p>info about craves, what to do, why use notes</p>
-        <h2 id="intro">Choose what you don't want:</h2>
-    </div>
-
-
+        <div class="intro">
+          <h1>About Crave</h1>
+          <p>info about craves, what to do, why use notes</p>
+          <h2 id="intro">Choose what you don't want:</h2>
+      </div>
       <div id="meat">
         <h2>Meats:</h2>
         <input type="checkbox" value="beef" name="restrictions">
@@ -43,6 +32,7 @@
         <input type="checkbox" value="salmon" name="restrictions"/>
         <label for="beef">Salmon</label> <br>
       </div>
+
       <div id="Veggies">
         <h2>Vegetables:</h2>
         <input type="checkbox" value="onions" name="restrictions"/>
@@ -56,6 +46,7 @@
         <input type="checkbox" value="lettuce" name="restrictions"/>
         <label for="lettuce">Lettuce</label> <br>
       </div>
+
       <div id="health">
         <h2>Dietary Restriction:</h2>
         <input type="checkbox" value="Vegetarian" name="health"/>
@@ -72,12 +63,12 @@
         <label for="diet">Alcohol</label> <br>
       </div>
     </div>
-
-
-    <form class= "txt" action="index.html" method="post">
-      <input id="input" type="text" name="location" value="" size="35">
-      <input id= "enter" type="submit" name="" value="enter">
-    </form>
-
-  </body>
+    <div class = "txt">
+      <input id="input" type="text" name="foodName" value="" size="35">
+      <input id="input" type="text" name="minCal" value="" size="35">
+      <input id="input" type="text" name="maxCal" value="" size="35">
+    </div>
+    <input id= "enter" type="submit" value="Enter">
+  </form>
+</body>
 </html>
