@@ -1,0 +1,37 @@
+#header{
+  text-align: center;
+}
+
+#name{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#info{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.ace{
+
+}
+
+.anahi{
+
+}
+
+.danny{
+
+}
+
+.karla{
+
+}
+
+.kyle{
+
+}
