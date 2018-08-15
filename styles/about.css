@@ -18,6 +18,9 @@
 }
 
 body{
+  background-image: url('../images/background_3.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
 
 }
 
