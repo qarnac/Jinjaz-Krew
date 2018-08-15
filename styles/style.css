@@ -2,7 +2,7 @@
   text-align: center;
 }
 body{
-  background-color: #f2c202;
+  background-color: white;
 }
 .grid-container {
   margin-left: 60px;
@@ -11,13 +11,8 @@ body{
   grid-template-rows: 1fr 1fr;
 }
 
-#crave{
-  height:150px;
-  width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: black solid 5px;
+#choose {
+  font-size: 35px
 }
 
 p {
