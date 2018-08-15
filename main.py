@@ -11,7 +11,7 @@ env = jinja2.Environment(
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        mypage = env.get_template('templates/homepage.html')
+        mypage = env.get_template('templates/select.html')
         self.response.write(mypage.render())
     def post(self):
         foodName = self.request.get('foodName')
