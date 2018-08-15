@@ -24,13 +24,11 @@ class RandomPage(webapp2.RequestHandler):
     def get(self):
         mypage = env.get_template('templates/randomfood.html')
         self.response.write(mypage.render())
-            def post(self):
 
 class AboutPage(webapp2.RequestHandler):
     def get(self):
         mypage = env.get_template('templates/aboutus.html')
         self.response.write(mypage.render())
-        def post(self):
 
 
 app = webapp2.WSGIApplication([
