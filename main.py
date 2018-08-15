@@ -16,7 +16,8 @@ class MainPage(webapp2.RequestHandler):
     def post(self):
         foodName = self.request.get('foodName')
         restriction = self.request.POST.getall('restrictions')
-        json_object = getUrl(foodName,restriction)
+        health = self.request.POST.getall('health')
+        json_object = getUrl(foodName,restriction,health)
 
         #mypage = env.get_template('templates/randomfood.html')
         self.response.write(json_object)
