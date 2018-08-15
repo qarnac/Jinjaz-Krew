@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Crave</title>
-    <link rel="stylesheet" href="../styles/style.css">
-  </head>
-  <body>
-    <div><!--header-->
+<head>
+  <meta charset="utf-8">
+  <title>Crave</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
 
-        <img id="crave" src = "../images/crave_pt2.jpg">
-        <br>
-    </div>
-    <form id="input"action="index.html" method="post">
-      <input type="text" name="location" value="">
-      <input type="submit" name="" value="enter">
-    </form>
+  <div><!--header-->
+      <img id="crave" src = "../images/crave_pt2.jpg">
+      <br>
+  </div>
 
-    <!--change intro later -->
-
+  <form action = "/" method = "post">
     <div class="grid-container">
-      <div class="intro">
-        <h2>About Crave</h2>
-        <p>info about craves, what to do, why use notes</p>
-        <h1 id="intro">Choose what you don't want:</h1>
-
+        <div class="intro">
+          <h1>About Crave</h1>
+          <p>info about craves, what to do, why use notes</p>
+          <h2 id="intro">Choose what you don't want:</h2>
       </div>
       <div id="meat">
         <h2>Meats:</h2>
@@ -38,6 +32,7 @@
         <input type="checkbox" value="salmon" name="restrictions"/>
         <label for="beef">Salmon</label> <br>
       </div>
+
       <div id="Veggies">
         <h2>Vegetables:</h2>
         <input type="checkbox" value="onions" name="restrictions"/>
@@ -51,6 +46,7 @@
         <input type="checkbox" value="lettuce" name="restrictions"/>
         <label for="lettuce">Lettuce</label> <br>
       </div>
+
       <div id="health">
         <h2>Dietary Restriction:</h2>
         <input type="checkbox" value="Vegetarian" name="health"/>
@@ -67,6 +63,15 @@
         <label for="diet">Alcohol</label> <br>
       </div>
     </div>
-
-  </body>
+    <div class = "txt">
+      <input id="input" type="text" name="foodName" value="" size="35">
+      <br><br>
+      <input id="input" type="text" name="minCal" value="" size="35">
+      <br><br>
+      <input id="input" type="text" name="maxCal" value="" size="35">
+      <br><br>
+    </div>
+    <input class= "txt" type="submit" value="Enter" size="20">
+  </form>
+</body>
 </html>
