@@ -3,6 +3,9 @@
 }
 body{
   background-color: white;
+  background-image : url('../images/background.jpg');
+  background-size: 100vw 100vh;
+  repeat: none;
 }
 .grid-container {
   margin-left: 60px;
