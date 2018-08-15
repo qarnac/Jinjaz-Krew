@@ -11,17 +11,29 @@ env = jinja2.Environment(
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        mypage = env.get_template('templates/homepage.html')
+        mypage = env.get_template('templates/select.html')
         self.response.write(mypage.render())
     def post(self):
         foodName = self.request.get('foodName')
         restriction = self.request.POST.getall('restrictions')
-        json_object = getUrl(foodName,restriction)
+        health = self.request.POST.getall('health')
+        json_object = getUrl(foodName,restriction,health)
 
         #mypage = env.get_template('templates/randomfood.html')
         self.response.write(json_object)
+class RandomPage(webapp2.RequestHandler):
+    def get(self):
+        mypage = env.get_template('templates/randomfood.html')
+        self.response.write(mypage.render())
+
+class AboutPage(webapp2.RequestHandler):
+    def get(self):
+        mypage = env.get_template('templates/aboutus.html')
+        self.response.write(mypage.render())
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainPage)
+    ('/', MainPage),
+    ('/random', RandomPage),
+    ('/about', AboutPage)
 ], debug=True)
