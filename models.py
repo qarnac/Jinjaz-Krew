@@ -6,7 +6,7 @@ def getUrl(foodName,restrictionsList):
     # restrictionsList, caloriesMin, caloriesMax, healthInfo
     food_name = 'q=' + foodName
     restrictions = ""
-    for i in restrictionsList
+    for i in restrictionsList:
         restrictions += '&exclude=' + restrictionsList[i]
     #maxCalories = caloriesMax
     #minCalories = caloriesMin
