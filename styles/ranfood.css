@@ -33,27 +33,29 @@ body{
   font-size: 37px;
 }
 
-#home{
-  background-color: #CE5A57;
-
+#select{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
+
 #recipe{
-  background-color: #78A5A3
+  background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 #aboutus{
-  background-color: #E1B16A;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
+
 #restrictions{
-  background-color: #E1B16A;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #foodname{
-  background-color: #78A5A3;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #picture{
-  background-color: #CE5A57;
+  background-color: rgba(255, 255, 255, 0.5);
 }

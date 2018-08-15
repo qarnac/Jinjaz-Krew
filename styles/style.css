@@ -3,7 +3,7 @@
 }
 body{
   background-color: white;
-  background-image : url('../images/background.jpg');
+  background-image : url('../images/food.jpg');
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   display: flex;
@@ -85,7 +85,7 @@ h3 {
 .button {
   width: 20em;  height: 2em;
 <<<<<<< HEAD
-  position: absolute; 
+  position: absolute;
 =======
   position: fixed;
 >>>>>>> 4a6787c7f4399838eb5f0b2fe59f1de2d0f68c74
