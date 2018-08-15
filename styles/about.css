@@ -1,0 +1,40 @@
+#header{
+  text-align: center;
+}
+
+#name{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#info{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+body{
+  
+}
+
+.ace{
+  background-color: #F4CC70;
+}
+.anahi{
+  background-color: #6AB187
+}
+
+.danny{
+  background-color: #DE7A22;
+}
+
+.karla{
+  background-color: #6AB187;
+}
+
+.kyle{
+  background-color: #F4CC70;
+}
