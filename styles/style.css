@@ -10,10 +10,10 @@ body{
 
 }
 .grid-container {
-  margin-left: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: 100px
 }
 
 #choose {
@@ -74,21 +74,7 @@ h3 {
 #enter {
   height: 25px;
 }
+
 .intro{
-  margin-top: 200px;
+  margin-top: 225px;
 }
-
-/**@media only screen and (max-width: 1000px) {
-    .grid-container {
-    word-wrap: break-word;
-    white-space:nowrap;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    min-width: 75px;
-    flex: 1;
-    flex-wrap: wrap;
-
-
-    }
-}*\
