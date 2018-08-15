@@ -2,7 +2,7 @@ import webapp2
 import jinja2
 import os
 import logging
-from models import *
+from models import getUrl
 
 env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -14,15 +14,11 @@ class MainPage(webapp2.RequestHandler):
         mypage = env.get_template('templates/homepage.html')
         self.response.write(mypage.render())
     def post(self):
-        #json_object = getUrl(self.request.get('foodName'),
-            #    self.request.get('restrictions', allow_multiples = True),
-            #    self.request.get('minCal'),
-            #    self.request.get('maxCal'),
-            #    self.request.get('health', allow_multiples = True))
+        foodName = self.request.get('foodName')
+        json_object = getUrl()
 
-        #logging.info(str(json_object))
-        mypage = env.get_template('templates/randomfood.html')
-        self.response.write(mypage.render())
+        #mypage = env.get_template('templates/randomfood.html')
+        self.response.write(json_object)
 
 
 app = webapp2.WSGIApplication([
