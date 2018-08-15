@@ -8,21 +8,13 @@ def getUrl(foodName, restrictionsList, caloriesMin, caloriesMax, healthInfo):
     minCalories = caloriesMin
     health_restrictions = healthInfo
 
-    params =[(
-        ('api_key' , 'b4dc98f7d320f1968ef7b63205e2e462'),
-        ('app_id' , '28c73d69'),
-        ('q' , food_name),
-        ('calories' , minCalories + '-' + maxCalories)
-    )]
-    for restrictions in health_restrictions:
-        params.insert(0, ('health', restrictions))
-    for restrictions in restrictions:
-        params.insert(0, ('excluded', restrictions))
-    form_data = urllib.urlencode(params)
-    api_url = 'https://api.edamam.com/search?' + form_data
-
-    request = urllib2.Request(api_url)
-    response = urllib2.urlopen(request).read()
-    content = json.loads(response)
-
-    return content
+    url = 'https://api.edamam.com/search?app_id=28c73d69&app_key=b4dc98f7d320f1968ef7b63205e2e462&q=steak'
+    try:
+        result = urlfetch.fetch(url)
+        if result.status_code == 200:
+            data = result.content
+            return data
+        else:
+            self.response.status_code = result.status_code
+    except urlfetch.Error:
+        logging.exception('Caught exception fetching url')
