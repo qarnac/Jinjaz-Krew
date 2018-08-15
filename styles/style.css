@@ -85,7 +85,11 @@ h3 {
 
 .button {
   width: 20em;  height: 2em;
+<<<<<<< HEAD
+  position: absolute; 
+=======
   position: fixed;
+>>>>>>> 4a6787c7f4399838eb5f0b2fe59f1de2d0f68c74
   right: 10px;
   down: 5px;
 }
