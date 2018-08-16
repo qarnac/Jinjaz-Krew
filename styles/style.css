@@ -4,9 +4,9 @@
 body{
   background-color: white;
   background-image : url('../images/food.jpg');
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  display: flex;
+
 }
 
 .grid-container {
@@ -16,7 +16,15 @@ body{
   margin-top: 200px;
   margin-left: 200px;
   grid-gap: 20px;
-  text-align: center;
+  text-align: left;
+
+
+}
+.grid-container > div {
+
+}
+.food > div{
+  padding-left: 30px;
 }
 
 #choose {
