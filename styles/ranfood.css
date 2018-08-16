@@ -13,13 +13,13 @@ body{
 #container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 30px;
 }
 
 #container > h2 {
   text-align: center;
   font-size: 35px;
-
+  
 }
 #container2{
   display: grid;
