@@ -15,8 +15,8 @@ env = jinja2.Environment(
 
 class TitlePage(webapp2.RequestHandler):
     def get(self):
-            mypage = env.get_template('templates/title.html')
-            self.response.write(mypage.render())
+        mypage = env.get_template('templates/title.html')
+        self.response.write(mypage.render())
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
