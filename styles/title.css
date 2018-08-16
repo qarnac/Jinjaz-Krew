@@ -6,11 +6,11 @@ body{
 
 }
 
-.gridcontainer2{
+/*.gridcontainer2{
   display: grid;
   margin-left: 1200px;
   margin-top: 200px;
-}
+}**/
 
 .link{
   display: flex;
