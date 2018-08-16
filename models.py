@@ -12,7 +12,7 @@ def getUrl(foodName,restrictionsList,healthList):
         health += '&health=' + items
     for item in restrictionsList:
         restrictions += '&exclude=' + item
-        
+
     logging.info('health' + health)
     #maxCalories = caloriesMax
     #minCalories = caloriesMin

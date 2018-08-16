@@ -13,6 +13,11 @@ env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
       autoescape=True)
 
+class TitlePage(webapp2.RequestHandler):
+    def get(self):
+            mypage = env.get_template('templates/title.html')
+            self.response.write(mypage.render())
+
 class MainPage(webapp2.RequestHandler):
     def get(self):
         mypage = env.get_template('templates/select.html')
@@ -32,15 +37,17 @@ class MainPage(webapp2.RequestHandler):
             totalTime = json_object['hits'][rand]['recipe']['totalTime']
             imageFile = json_object['hits'][rand]['recipe']['image']
             linkUrl = json_object['hits'][rand]['recipe']['url']
-            self.response.write(mypage.render({'foodName' : food_name, 'time' : totalTime, 'img' : imageFile, 'link' : linkUrl}))
+            cal = json_object['hits'][rand]['recipe']['calories']
+            cal = int(cal)
+            ingr = ''
+            ingredients = json_object['hits'][rand]['recipe']['ingredientLines']
+            for items in ingredients:
+                ingr += items + ', '
+            self.response.write(mypage.render({'foodName' : food_name, 'time' : totalTime, 'img' : imageFile, 'link' : linkUrl,
+                                                'calories' : cal, 'ingredients' : ingr}))
         except urlfetch.Error:
             logging.exception('Caught exception fetching url')
         #
-class RandomPage(webapp2.RequestHandler):
-    def get(self):
-        mypage = env.get_template('templates/randomfood.html')
-        self.response.write(mypage.render())
-
 class AboutPage(webapp2.RequestHandler):
     def get(self):
         mypage = env.get_template('templates/aboutus.html')
@@ -48,7 +55,7 @@ class AboutPage(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainPage),
-    ('/random', RandomPage),
+    ('/', TitlePage),
+    ('/select', MainPage),
     ('/about', AboutPage)
 ], debug=True)
