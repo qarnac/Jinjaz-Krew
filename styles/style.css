@@ -100,3 +100,14 @@ h3 {
 input{
   text-align: center;
 }
+
+#container2 {
+  background-color: rgba(255,255,255, 0.3);
+  margin-left: 500px;
+  margin-right: 500px;
+  text-align: center;
+}
+
+.text {
+  margin-top: 15px;
+}
