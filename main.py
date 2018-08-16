@@ -50,6 +50,11 @@ class MainPage(webapp2.RequestHandler):
 
 class AboutPage(webapp2.RequestHandler):
     def get(self):
+        mypage = env.get_template('templates/aboutus.html')
+        self.response.write(mypage.render())
+
+class AboutCrave(webapp2.RequestHandler):
+    def get(self):
         mypage = env.get_template('templates/aboutcrave.html')
         self.response.write(mypage.render())
 
@@ -57,4 +62,5 @@ app = webapp2.WSGIApplication([
     ('/', TitlePage),
     ('/select', MainPage),
     ('/about', AboutPage),
+    ('/aboutcrave', AboutCrave)
 ], debug=True)
