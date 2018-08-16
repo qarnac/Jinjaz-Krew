@@ -1,6 +1,6 @@
 body{
   background-image: url('../images/main_background2.png');
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
 }
@@ -14,7 +14,11 @@ body{
 #container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+<<<<<<< HEAD
 
+=======
+  grid-gap: 30px;
+>>>>>>> 970aa0f5d837b8e3eec5adac8843183203c301fa
 }
 
 #container > h2 {
