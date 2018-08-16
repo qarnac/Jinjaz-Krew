@@ -1,5 +1,5 @@
 body{
-  background-image: url('../images/background_2.jpg');
+  background-image: url('../images/main_background2.png');
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
 
@@ -30,6 +30,7 @@ body{
 
 #container2 > h2 {
   text-align: center;
+  margin-left: 80px;
   font-size: 37px;
 }
 
