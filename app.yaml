@@ -10,6 +10,9 @@ handlers:
 - url: /styles
   static_dir: styles
 
+- url: /js_files
+  static_dir: javas
+
 - url: /.*
   script: main.app
 
