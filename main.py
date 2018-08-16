@@ -13,6 +13,11 @@ env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
       autoescape=True)
 
+class TitlePage(webapp2.RequestHandler):
+    def get(self):
+            mypage = env.get_template('templates/title.html')
+            self.response.write(mypage.render())
+
 class MainPage(webapp2.RequestHandler):
     def get(self):
         mypage = env.get_template('templates/select.html')
@@ -37,7 +42,7 @@ class MainPage(webapp2.RequestHandler):
             ingr = ''
             ingredients = json_object['hits'][rand]['recipe']['ingredientLines']
             for items in ingredients:
-                ingr += items
+                ingr += items + ', '
             self.response.write(mypage.render({'foodName' : food_name, 'time' : totalTime, 'img' : imageFile, 'link' : linkUrl,
                                                 'calories' : cal, 'ingredients' : ingr}))
         except urlfetch.Error:
@@ -55,7 +60,8 @@ class AboutPage(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainPage),
+    ('/', TitlePage), 
+    ('/select', MainPage),
     ('/random', RandomPage),
     ('/about', AboutPage)
 ], debug=True)
