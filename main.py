@@ -5,6 +5,7 @@ import logging
 from models import getUrl
 import json
 import urllib2
+from random import randint
 from google.appengine.api import *
 
 env = jinja2.Environment(
@@ -23,15 +24,11 @@ class MainPage(webapp2.RequestHandler):
         url = getUrl(foodName,restriction,health)
 
         try:
-            result = urlfetch.fetch(url)
-            if result.status_code == 200:
-                json_object = json.loads(result.content)
-                logging.info(json_object['hits']['recipe'])
-
-                mypage = env.get_template('templates/randomfood.html')
-                self.response.write(json_object)
-            else:
-                self.response.status_code = result.status_code
+            result = urllib2.urlopen(url).read()
+            json_object = json.loads(result)
+            mypage = env.get_template('templates/randomfood.html')
+            food_name = json_object['hits'][randint(0,len(json_object))]['recipe']['label']
+            self.response.write(mypage.render({'foodName' : food_name}))
         except urlfetch.Error:
             logging.exception('Caught exception fetching url')
         #
