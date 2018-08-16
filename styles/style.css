@@ -53,7 +53,9 @@ h3 {
   grid-row: 2/ 3;
   font-size: 25px;
   background-color: rgba(255,255,255, 0.3);
+
 }
+
 
 #Veggies {
   grid-column: 2;
@@ -76,7 +78,7 @@ h3 {
 #input {
  height:25px;
  font-size:14pt;
- margin-top: 100px;
+ margin-top: 10px;
 }
 
 #enter {
@@ -85,11 +87,16 @@ h3 {
 
 .button {
   width: 20em;  height: 2em;
-<<<<<<< HEAD
+
   position: absolute;
-=======
+
   position: fixed;
->>>>>>> 4a6787c7f4399838eb5f0b2fe59f1de2d0f68c74
+
   right: 10px;
   down: 5px;
+}
+
+
+input{
+  text-align: center;
 }
