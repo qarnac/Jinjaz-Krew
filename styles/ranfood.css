@@ -1,10 +1,6 @@
 body{
   background-image: url('../images/main_background2.png');
-<<<<<<< HEAD
-  background-size: cover;
-=======
-  background-size: 100% ;
->>>>>>> 03ccc2de986102fa4931936f2ef0a983035c4f55
+  background-size: cover ;
   background-repeat: no-repeat;
 
 }
