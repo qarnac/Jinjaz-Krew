@@ -34,8 +34,12 @@ class MainPage(webapp2.RequestHandler):
             linkUrl = json_object['hits'][rand]['recipe']['url']
             cal = json_object['hits'][rand]['recipe']['calories']
             cal = int(cal)
+            ingr = ''
+            ingredients = json_object['hits'][rand]['recipe']['ingredientLines']
+            for items in ingredients:
+                ingr += items
             self.response.write(mypage.render({'foodName' : food_name, 'time' : totalTime, 'img' : imageFile, 'link' : linkUrl,
-                                                'calories' : cal}))
+                                                'calories' : cal, 'ingredients' : ingr}))
         except urlfetch.Error:
             logging.exception('Caught exception fetching url')
         #
