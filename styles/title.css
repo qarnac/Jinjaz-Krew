@@ -6,19 +6,6 @@ body{
 
 }
 
-/*.gridcontainer2{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 200px;
-<<<<<<< HEAD
-  grid-gap: 20px;
-  padding-left: 300px;
-  }
-=======
-}**/
->>>>>>> e03c1169e7ae216a4e19ace60e4d485a4aeba8bd
-
 .link{
    text-align: center;
     font-size: 30px;
