@@ -1,0 +1,20 @@
+body{
+  background-image: url('../images/about_crave.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.gridcontainer2{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+margin-top: 200px;
+margin-left: 100px;
+margin-right: 100px;
+grid-gap: 20px;
+text-align: left;
+font-family: cursive;
+font-size: 30px;
+text-shadow: 5px 5px 5px black;
+color: white;
+}
