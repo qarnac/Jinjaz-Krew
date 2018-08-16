@@ -27,8 +27,12 @@ class MainPage(webapp2.RequestHandler):
             result = urllib2.urlopen(url).read()
             json_object = json.loads(result)
             mypage = env.get_template('templates/randomfood.html')
-            food_name = json_object['hits'][randint(0,len(json_object))]['recipe']['label']
-            self.response.write(mypage.render({'foodName' : food_name}))
+            rand = randint(0,len(json_object))
+            food_name = json_object['hits'][rand]['recipe']['label']
+            totalTime = json_object['hits'][rand]['recipe']['totalTime']
+            imageFile = json_object['hits'][rand]['recipe']['image']
+            linkUrl = json_object['hits'][rand]['recipe']['url']
+            self.response.write(mypage.render({'foodName' : food_name, 'time' : totalTime, 'img' : imageFile, 'link' : linkUrl}))
         except urlfetch.Error:
             logging.exception('Caught exception fetching url')
         #
