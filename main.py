@@ -15,8 +15,8 @@ env = jinja2.Environment(
 
 class TitlePage(webapp2.RequestHandler):
     def get(self):
-            mypage = env.get_template('templates/title.html')
-            self.response.write(mypage.render())
+        mypage = env.get_template('templates/title.html')
+        self.response.write(mypage.render())
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
@@ -47,15 +47,14 @@ class MainPage(webapp2.RequestHandler):
                                                 'calories' : cal, 'ingredients' : ingr}))
         except urlfetch.Error:
             logging.exception('Caught exception fetching url')
-        #
+
 class AboutPage(webapp2.RequestHandler):
     def get(self):
-        mypage = env.get_template('templates/aboutus.html')
+        mypage = env.get_template('templates/aboutcrave.html')
         self.response.write(mypage.render())
-
 
 app = webapp2.WSGIApplication([
     ('/', TitlePage),
     ('/select', MainPage),
-    ('/about', AboutPage)
+    ('/about', AboutPage),
 ], debug=True)

@@ -96,11 +96,8 @@ h3 {
 
 .button {
   width: 20em;  height: 2em;
-
   position: absolute;
-
   position: fixed;
-
   right: 10px;
   down: 5px;
 }
