@@ -48,11 +48,6 @@ class MainPage(webapp2.RequestHandler):
         except urlfetch.Error:
             logging.exception('Caught exception fetching url')
         #
-class RandomPage(webapp2.RequestHandler):
-    def get(self):
-        mypage = env.get_template('templates/randomfood.html')
-        self.response.write(mypage.render())
-
 class AboutPage(webapp2.RequestHandler):
     def get(self):
         mypage = env.get_template('templates/aboutus.html')
@@ -60,8 +55,7 @@ class AboutPage(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', TitlePage), 
+    ('/', TitlePage),
     ('/select', MainPage),
-    ('/random', RandomPage),
     ('/about', AboutPage)
 ], debug=True)
