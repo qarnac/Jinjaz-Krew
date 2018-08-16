@@ -5,3 +5,31 @@ body{
   background-repeat: no-repeat;
 
 }
+
+.gridcontainer2{
+  display: grid;
+  margin-left: 1200px;
+  margin-top: 200px;
+}
+
+.link{
+  display: flex;
+  flex:50%;
+}
+
+.about{
+  display: flex;
+  flex: 50%;
+}
+
+#header{
+  font-size: 30px;
+}
+
+#select{
+  margin-left: 100px;
+}
+
+#usecrave{
+  margin-left: 100px;
+}
