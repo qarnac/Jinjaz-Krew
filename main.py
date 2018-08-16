@@ -13,6 +13,11 @@ env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
       autoescape=True)
 
+class TitlePage(webapp2.RequestHandler):
+    def get(self):
+            mypage = env.get_template('templates/title.html')
+            self.response.write(mypage.render())
+
 class MainPage(webapp2.RequestHandler):
     def get(self):
         mypage = env.get_template('templates/select.html')
@@ -55,7 +60,8 @@ class AboutPage(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainPage),
+    ('/', TitlePage), 
+    ('/select', MainPage),
     ('/random', RandomPage),
     ('/about', AboutPage)
 ], debug=True)
