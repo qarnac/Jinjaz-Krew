@@ -15,4 +15,6 @@ grid-gap: 20px;
 text-align: left;
 font-family: cursive;
 font-size: 30px;
+text-shadow: 5px 5px 5px black;
+color: white;
 }
