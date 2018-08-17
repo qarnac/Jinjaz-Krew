@@ -6,8 +6,8 @@ body{
 }
 .gridcontainer2{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
 margin-top: 200px;
 margin-left: 100px;
 margin-right: 100px;
